@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeineb Rekik · Pharmacy meets engineering</title>
+<style>
+:root{--paper:#f7f6ef;--ink:#123f3c;--muted:#596c64;--line:#d8dfd3;--green:#dceca5;--white:#fffef8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}button,a,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #a786db;outline-offset:5px}header{position:sticky;top:0;z-index:20;background:rgba(247,246,239,.96);border-bottom:1px solid var(--line)}nav{max-width:1220px;margin:auto;padding:20px 32px;display:flex;align-items:center;gap:28px}nav .logo{font-weight:800;font-size:23px;text-decoration:none;letter-spacing:-1px;margin-right:auto}nav .logo span{color:#829458}nav>a:not(.logo){font-size:13px;text-decoration:none}nav>a:hover{text-decoration:underline}.pill{border:1px solid var(--ink);border-radius:40px;padding:11px 19px;background:transparent;color:var(--ink);font-size:13px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:10px}.pill.dark{background:var(--ink);color:var(--white)}.pill:hover{background:var(--green);color:var(--ink)}main{max-width:1220px;margin:auto;padding:0 32px}.hero{min-height:650px;padding:84px 0 65px;display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;display:flex;align-items:center;gap:10px}.dot{height:8px;width:8px;background:#6f8f33;border-radius:100%;display:inline-block}h1{font-size:clamp(48px,6.3vw,79px);letter-spacing:-4px;line-height:1.04;font-weight:500;margin:25px 0}h1 em,h2 em{font-family:Georgia,serif;font-weight:400}h1 em{color:#789244}.intro{max-width:470px;line-height:1.8;color:var(--muted);font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-note{font-size:11px;letter-spacing:.8px;color:var(--muted);margin-top:25px}.art{position:relative;min-height:440px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse,#e6edcc 0%,transparent 66%);border-radius:50%}.art svg{width:100%;max-width:460px;height:auto;overflow:visible}.orbit{transform-origin:230px 230px;animation:rotate 45s linear infinite}.orbit.reverse{animation-direction:reverse;animation-duration:65s}@keyframes rotate{to{transform:rotate(360deg)}}.art-label{position:absolute;background:var(--white);padding:13px 17px;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 28px #123f3c09;font-size:12px}.art-label b{display:block;margin-bottom:5px}.art-label small{color:var(--muted)}.art-label.one{top:40px;left:0}.art-label.two{right:0;bottom:32px}.strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 0;gap:24px}.strip>div{display:flex;align-items:center;gap:18px}.strip b{font-family:Georgia,serif;font-size:34px;font-weight:400}.strip span{font-size:12px;line-height:1.6;color:var(--muted)}section{padding:78px 0;border-bottom:1px solid var(--line)}.section-top{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:32px}.kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin:0 0 15px}h2{font-size:clamp(32px,4vw,46px);font-weight:500;letter-spacing:-1.7px;line-height:1.1;margin:0}.section-top>p{max-width:310px;line-height:1.7;font-size:13px;color:var(--muted)}.journey{display:grid;grid-template-columns: .9fr 1.3fr;gap:28px}.timeline{display:flex;flex-direction:column;gap:9px}.job{border:1px solid var(--line);border-radius:14px;background:transparent;text-align:left;color:var(--ink);padding:19px 22px;display:flex;align-items:center;gap:16px;transition:.2s}.job:hover{background:#eef0e5}.job[aria-selected=true]{background:var(--ink);color:var(--white);border-color:var(--ink)}.job .number{font:italic 18px Georgia;opacity:.6}.job strong{font-size:14px;display:block;margin-bottom:5px}.job small{font-size:11px;opacity:.75}.job .arrow{margin-left:auto}.detail{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:35px;min-height:365px}.detail .tag{background:var(--green);padding:7px 12px;border-radius:25px;font-size:11px;display:inline-block}.detail h3{font-size:27px;letter-spacing:-.7px;margin:24px 0 8px}.detail .meta{font-size:12px;color:var(--muted)}.detail ul{padding-left:19px;font-size:14px;line-height:1.8;color:var(--muted)}.chips{display:flex;gap:7px;flex-wrap:wrap}.chips span{padding:7px 10px;border:1px solid var(--line);font-size:11px;border-radius:20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--white);border-radius:20px;overflow:hidden;text-align:left;color:var(--ink);padding:0;transition:transform .2s,box-shadow .2s}.project:hover{transform:translateY(-5px);box-shadow:0 12px 24px #123f3c0c}.graphic{height:172px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.graphic.pack{background:#e9ecd9}.graphic.vessel{background:#e0ebe7}.graphic.network{background:#eee8f3}.graphic svg{height:130px;width:180px}.project-body{padding:25px;flex:1}.project-body small{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted)}.project h3{font-size:20px;font-weight:500;line-height:1.3;letter-spacing:-.4px;margin:14px 0}.project p{font-size:13px;line-height:1.7;color:var(--muted)}.project-footer{display:flex;justify-content:space-between;align-items:center;margin-top:24px;font-size:12px}.filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px}.filter{background:transparent;color:var(--ink);border:1px solid var(--line);padding:10px 18px;border-radius:30px;font-size:12px}.filter[aria-pressed=true]{background:var(--ink);color:var(--white)}.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{border:1px solid var(--line);border-radius:13px;padding:21px;background:var(--white)}.skill small{font-size:10px;color:var(--muted);display:block;margin-bottom:11px;text-transform:uppercase;letter-spacing:1px}.skill b{font-size:14px;font-weight:500}.education{display:grid;grid-template-columns:1fr 1fr;gap:34px}.edu-item{padding:20px 0;border-bottom:1px solid var(--line)}.edu-item h3{font-size:17px;margin:0 0 9px;font-weight:500}.edu-item p{font-size:13px;color:var(--muted);line-height:1.65;margin:0}.aside{padding:30px;background:#e9ecd9;border-radius:20px}.aside h3{font:italic 26px Georgia;margin:0 0 20px}.aside p{font-size:14px;line-height:1.8;color:var(--muted)}.interests{display:flex;gap:8px;flex-wrap:wrap;margin:23px 0 0}.interests span{background:var(--white);border-radius:25px;font-size:12px;padding:10px 14px}.contact{background:var(--ink);color:var(--white);margin:55px 0 30px;padding:48px;border-radius:25px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px}.contact .kicker{color:var(--green)}.contact h2{font-size:43px}.contact p{font-size:14px;line-height:1.8;opacity:.8}.contact-links{display:flex;flex-direction:column;gap:12px;justify-content:center}.contact-links a,.contact-links button{border:1px solid #ffffff35;border-radius:11px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;text-decoration:none;color:var(--white);background:transparent;font-size:13px;text-align:left}.contact-links a:hover,.contact-links button:hover{background:#ffffff12}footer{display:flex;justify-content:space-between;padding:20px 0 35px;font-size:11px;color:var(--muted);gap:16px}footer a{text-decoration:none}dialog{width:min(560px,90vw);border:1px solid var(--line);border-radius:22px;background:var(--paper);color:var(--ink);padding:35px}dialog::backdrop{background:#102f2dc4;backdrop-filter:blur(5px)}dialog h3{font-size:28px;letter-spacing:-.8px}dialog p{font-size:15px;line-height:1.8;color:var(--muted)}.close{float:right;background:transparent;border:1px solid var(--line);border-radius:50%;width:34px;height:34px;color:var(--ink)}.toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);padding:13px 22px;border-radius:30px;background:var(--ink);color:white;font-size:13px;z-index:50;box-shadow:0 6px 25px #0002}.toast:empty{display:none}.print-only{display:none}
+@media(max-width:800px){nav{padding:17px 22px;gap:16px}nav .nav-extra{display:none}main{padding:0 22px}.hero{grid-template-columns:1fr;padding-top:48px;gap:8px;min-height:auto}h1{letter-spacing:-2.5px}.art{min-height:340px;max-width:440px;width:100%;margin:auto}.art svg{max-width:340px}.art-label.one{top:25px}.art-label.two{bottom:10px}.strip{gap:14px}.strip>div{display:block}.strip b{font-size:27px}.strip span{display:block;margin-top:8px;font-size:11px}.section-top{display:block}.journey,.education,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.graphic{height:145px}.skills{grid-template-columns:repeat(2,1fr)}section{padding:55px 0}.contact{padding:30px;gap:10px}.contact h2{font-size:35px}.detail{padding:25px}footer{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.orbit{animation:none}.project,.job{transition:none}}
+@media print{body{background:white;color:black;font-size:11pt}header,.art,.actions,.hero-note,.strip,.filters,.contact-links,footer,dialog,.toast,.project-footer{display:none!important}main{padding:0;max-width:none}.hero{display:block;padding:0;min-height:0}h1{font-size:36px;letter-spacing:-1px;margin:12px 0}.intro{max-width:none}.hero .eyebrow{font-size:10px}.section-top{margin-bottom:14px}h2{font-size:25px}section{padding:20px 0;break-inside:avoid}.journey{display:none}.print-only{display:block}.print-only article{margin:16px 0;break-inside:avoid}.print-only h3{font-size:15px;margin-bottom:4px}.print-only p,.print-only li{font-size:11px;line-height:1.5}.cards{grid-template-columns:repeat(3,1fr)}.graphic{display:none}.project{border-radius:0}.project-body{padding:12px}.project h3{font-size:15px}.project p{font-size:11px}.skills{grid-template-columns:repeat(4,1fr)}.skill{padding:9px}.skill b{font-size:11px}.skill small{font-size:8px}.education{gap:20px}.aside{padding:16px}.contact{margin:20px 0 0;background:white;color:black;padding:0;border-radius:0}.contact h2{font-size:25px}.contact .kicker{color:black}.contact p{font-size:11px}.contact .print-only{font-size:11px}a{text-decoration:none}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Main navigation">
+<a class="logo" href="#home">zr<span>.</span></a>
+<a href="#journey">My journey</a><a class="nav-extra" href="#work">Selected work</a><a class="nav-extra" href="#skills">Skills</a><a class="pill" href="#contact">Let’s connect ↗</a>
+</nav></header>
+<main>
+<div class="hero" id="home">
+<div>
+<div class="eyebrow"><span class="dot"></span> Pharmacist & process engineer</div>
+<h1>Science with<br>purpose.<br><em>Engineering</em><br>with care.</h1>
+<p class="intro">Hi, I’m <strong>Zeineb Rekik.</strong> I connect pharmaceutical knowledge, process engineering, and creative problem-solving to help shape better outcomes for patients.</p>
+<div class="actions"><a href="#journey" class="pill dark">Explore my journey ↓</a><button class="pill" id="print">Print / save CV ↗</button></div>
+<p class="hero-note">PHARMACY · PROCESS DESIGN · CONTINUOUS IMPROVEMENT</p>
+</div>
+<div class="art" aria-label="Illustration connecting pharmacy, engineering, and patients" role="img">
+<svg viewBox="0 0 460 460" fill="none" aria-hidden="true">
+<circle cx="230" cy="230" r="190" stroke="#b7c3a4" stroke-dasharray="3 8"/>
+<g class="orbit"><ellipse cx="230" cy="230" rx="190" ry="76" stroke="#8da078" transform="rotate(-38 230 230)"/><circle cx="91" cy="340" r="12" fill="#123f3c"/></g>
+<g class="orbit reverse"><ellipse cx="230" cy="230" rx="168" ry="90" stroke="#bdc8ae" transform="rotate(44 230 230)"/><circle cx="350" cy="349" r="8" fill="#a88dc3"/></g>
+<circle cx="230" cy="230" r="99" fill="#123f3c"/>
+<circle cx="230" cy="230" r="87" stroke="#57726a"/>
+<path d="M209 192a24 24 0 0 1 34-34l58 58a24 24 0 0 1-34 34z" transform="translate(-20 22)" stroke="#dceca5" stroke-width="3"/>
+<path d="m213 215 34-34" stroke="#dceca5" stroke-width="3"/>
+<circle cx="291" cy="164" r="5" fill="#dceca5"/>
+<text x="230" y="286" text-anchor="middle" fill="#f7f6ef" font-family="Arial" font-size="10" letter-spacing="3">PATIENTS FIRST</text>
+<circle cx="132" cy="94" r="22" fill="#dceca5"/><path d="M132 85v18m-9-9h18" stroke="#123f3c" stroke-width="2"/>
+<circle cx="383" cy="241" r="25" fill="#e3d8ed"/><path d="m372 241 7 7 15-16" stroke="#123f3c" stroke-width="2"/>
+</svg>
+<div class="art-label one"><b>Pharmacy × Engineering</b><small>Where knowledge becomes impact</small></div>
+<div class="art-label two"><b>Curiosity is my catalyst.</b><small>From a question to a better process</small></div>
+</div>
+</div>
+<div class="strip">
+<div><b>01</b><span>Patient-focused<br>pharmaceutical knowledge</span></div>
+<div><b>02</b><span>Process-minded<br>engineering approach</span></div>
+<div><b>03</b><span>Creative by nature<br>entrepreneurial thinking</span></div>
+</div>
+<section id="journey">
+<div class="section-top"><div><p class="kicker">01 / Experience</p><h2>A journey of <em>connections.</em></h2></div><p>From patient care to pharmaceutical manufacturing. Select a role to explore the experience behind it.</p></div>
+<div class="journey">
+<div class="timeline" role="tablist" aria-label="Professional experience" aria-orientation="vertical" id="timeline"></div>
+<div class="detail" id="detail" role="tabpanel" tabindex="0"></div>
+</div>
+<div class="print-only" id="print-jobs"></div>
+</section>
+<section id="work">
+<div class="section-top"><div><p class="kicker">02 / Selected work</p><h2>Ideas into <em>action.</em></h2></div><p>A few highlights from my CV. Open a card to discover the problem and my contribution.</p></div>
+<div class="cards">
+<button class="project" data-project="0">
+<div class="graphic pack"><svg viewBox="0 0 180 130" fill="none" aria-hidden="true"><path d="m40 43 47-25 52 26-49 27z" fill="#dceca5" stroke="#123f3c" stroke-width="2"/><path d="M40 43v48l50 26V71m0 46 49-27V44" stroke="#123f3c" stroke-width="2"/><path d="m65 31 51 27v23" stroke="#123f3c" stroke-width="2"/><circle cx="137" cy="91" r="21" fill="#123f3c"/><path d="M126 93c10-15 17-11 20-17 2 16-3 23-14 24m0-6 9-9" stroke="#dceca5" stroke-width="2"/></svg></div>
+<div class="project-body"><small>Entrepreneurship · Innoprod</small><h3>Rethinking medicine packaging.</h3><p>An eco-friendly, digitalised alternative for secondary pharmaceutical packaging.</p><div class="project-footer"><span>First prize · Ingé-Innov 2024</span><span>↗</span></div></div>
+</button>
+<button class="project" data-project="1">
+<div class="graphic vessel"><svg viewBox="0 0 180 130" fill="none" aria-hidden="true"><ellipse cx="89" cy="27" rx="37" ry="12" stroke="#123f3c" stroke-width="2"/><path d="M52 27v65c0 17 74 17 74 0V27M65 108v13m49-13v13M89 15V5m0 10v70m-15-8 15 8 15-8" stroke="#123f3c" stroke-width="2"/><path d="M53 64c23 9 49-8 72 0v28c0 15-72 15-72 0z" fill="#9cb7a3" opacity=".65"/><path d="M126 47h24v23M52 80H29V55" stroke="#123f3c" stroke-width="2"/><circle cx="150" cy="79" r="9" fill="#dceca5" stroke="#123f3c"/></svg></div>
+<div class="project-body"><small>Process engineering · Novo Nordisk</small><h3>Building confidence in formulation.</h3><p>Equipment qualification, validation planning, and aseptic manufacturing processes.</p><div class="project-footer"><span>Science & risk-based approach</span><span>↗</span></div></div>
+</button>
+<button class="project" data-project="2">
+<div class="graphic network"><svg viewBox="0 0 180 130" fill="none" aria-hidden="true"><path d="m90 65-55-35m55 35 55-35M90 65H25m65 0h65m-65 0-50 40m50-40 50 40" stroke="#8d779b" stroke-width="2"/><g fill="#f7f6ef" stroke="#123f3c" stroke-width="2"><circle cx="35" cy="30" r="12"/><circle cx="145" cy="30" r="12"/><circle cx="25" cy="65" r="12"/><circle cx="155" cy="65" r="12"/><circle cx="40" cy="105" r="12"/><circle cx="140" cy="105" r="12"/></g><circle cx="90" cy="65" r="23" fill="#123f3c"/><path d="M80 65h20m-10-10v20" stroke="#dceca5" stroke-width="2"/></svg></div>
+<div class="project-body"><small>Collaboration · Knowledge sharing</small><h3>Making knowledge flow.</h3><p>Communication roadmaps, shared templates, and interactive technical training tools.</p><div class="project-footer"><span>Connecting six sites</span><span>↗</span></div></div>
+</button>
+</div>
+</section>
+<section id="skills">
+<div class="section-top"><div><p class="kicker">03 / My toolkit</p><h2>Many skills.<br><em>One curious mind.</em></h2></div><p>Explore the technical, digital, and human skills I bring to a team.</p></div>
+<div class="filters" aria-label="Filter skills">
+<button class="filter" aria-pressed="true" data-filter="All">All skills</button>
+<button class="filter" aria-pressed="false" data-filter="Engineering">Engineering</button>
+<button class="filter" aria-pressed="false" data-filter="Digital">Digital tools</button>
+<button class="filter" aria-pressed="false" data-filter="People">People & projects</button>
+<button class="filter" aria-pressed="false" data-filter="Languages">Languages</button>
+</div>
+<div class="skills" id="skill-grid" aria-live="polite"></div>
+</section>
+<section id="about">
+<div class="section-top"><div><p class="kicker">04 / Learning & life</p><h2>Always <em>exploring.</em></h2></div><p>A foundation in pharmacy, a path into engineering, and curiosity beyond the workplace.</p></div>
+<div class="education">
+<div>
+<div class="edu-item"><h3>Process engineering apprenticeship</h3><p>IMT Mines Albi, France<br>Process optimisation, technology transfer, operational excellence, and solid and liquid formulation.</p></div>
+<div class="edu-item"><h3>Doctor of Pharmacy</h3><p>Faculty of Pharmacy of Monastir, Tunisia<br>Quality management, biotechnology, pharmacology, and process validation.</p></div>
+<div class="edu-item"><h3>Additional learning</h3><p>Fundamentals of Machine Learning for Healthcare · Stanford School of Medicine<br>Drug Discovery, Development and Commercialization · Skaggs School of Pharmacy<br>Certified Associate Project Manager</p></div>
+</div>
+<div class="aside">
+<h3>Beyond the lab.</h3>
+<p>I enjoy finding new perspectives through music, travel, and strategy—from DJing and scuba diving to camping and chess.</p>
+<p>My community experience includes diplomatic simulations with TIMUN, social entrepreneurship through the Hult Prize, and youth peer education with Y-PEER.</p>
+<div class="interests"><span>♫ DJing</span><span>◉ Scuba diving · Level 1</span><span>△ Camping</span><span>♞ Chess</span></div>
+</div>
+</div>
+</section>
+<div class="contact" id="contact">
+<div><p class="kicker">05 / Let’s connect</p><h2>Good conversations<br>create <em>possibilities.</em></h2><p>I’m pleased to share my experience and happy to answer your questions. Have a relevant training recommendation or an opportunity to help me grow? I’d love to hear from you.</p><p class="print-only">ZREK@novonordisk.com<br>linkedin.com/in/zeineb-rekik-a09259153</p></div>
+<div class="contact-links">
+<a href="mailto:ZREK@novonordisk.com"><span>Send me an email</span><span>↗</span></a>
+<a href="https://www.linkedin.com/in/zeineb-rekik-a09259153" target="_blank" rel="noopener noreferrer"><span>Connect on LinkedIn</span><span>↗</span></a>
+<button id="copy"><span>Copy email address</span><span>＋</span></button>
+</div>
+</div>
+<footer><span>© Zeineb Rekik · Pharmacy meets engineering.</span><span>Based on the supplied CV.</span><a href="#home">Back to top ↑</a></footer>
+</main>
+<dialog id="project-dialog" aria-labelledby="dialog-title">
+<button class="close" aria-label="Close project details">×</button><p class="kicker" id="dialog-category"></p><h3 id="dialog-title"></h3><p id="dialog-text"></p><div class="chips" id="dialog-tags"></div>
+</dialog>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+const jobs=[
+{title:"Process engineer",org:"Novo Nordisk",place:"France",duration:"18 months in the supplied CV",label:"Fill & Finish",points:["Qualify formulation equipment and processes, from requirements and supplier selection to commissioning and verification.","Plan formulation process validation for injectables, including testing strategy and facility interfaces.","Draft and review technical documents and SOPs using a science and risk-based approach; manage deviations.","Support GMP Annex 1 compliance, tank-use planning, and A3 problem-solving for corporate audit findings."],tags:["Equipment qualification","Aseptic manufacturing","Process validation"]},
+{title:"Entrepreneurship project manager",org:"Innoprod",place:"Albi, France",duration:"6 months",label:"Innovation & sustainability",points:["Develop and manage an entrepreneurship project for an eco-friendly, digitalised alternative to secondary medicine packaging.","Entrepreneurship project awarded first prize at the Ingé-Innov Salon in Albi, 2024."],tags:["Project management","Packaging","Entrepreneurship"]},
+{title:"Research & development project manager",org:"Drug Development Laboratory",place:"Faculty of Pharmacy of Monastir, Tunisia",duration:"6 months",label:"Green chemistry",points:["Develop a green chemistry process for producing phenolic compounds.","Optimise process conditions to improve product purity."],tags:["Research & development","Process optimisation","Green chemistry"]},
+{title:"Pharmaceutical industry intern",org:"Adwya Laboratories",place:"Tunisia",duration:"3 months",label:"Operational improvement",points:["Conduct a feasibility study to optimise powder transfer in production using DMAIC.","Investigate a quality deviation using the 5M method."],tags:["DMAIC","Quality investigation","Manufacturing"]},
+{title:"Community pharmacy & hospital ICU intern",org:"Ali Farhat’s pharmacy & Farhat Hached Hospital",place:"Tunisia",duration:"9 months",label:"Patient care",points:["Analyse medical prescriptions and support medication circuit management.","Work across supply, dispensation, storage, distribution, and administration.","Educate and counsel patients."],tags:["Clinical pharmacy","Medication management","Patient education"]}
+];
+const timeline=document.getElementById("timeline"),detail=document.getElementById("detail");
+timeline.innerHTML=jobs.map((j,i)=>`<button class="job" id="job-${i}" role="tab" aria-controls="detail" aria-selected="${i===0}" tabindex="${i===0?0:-1}" data-index="${i}"><span class="number">0${i+1}</span><span><strong>${j.org}</strong><small>${j.title}</small></span><span class="arrow">↗</span></button>`).join("");
+function selectJob(i,focus=false){const j=jobs[i];timeline.querySelectorAll(".job").forEach((b,k)=>{b.setAttribute("aria-selected",k===i);b.tabIndex=k===i?0:-1});detail.setAttribute("aria-labelledby",`job-${i}`);detail.innerHTML=`<span class="tag">${j.label}</span><h3>${j.title}</h3><p class="meta">${j.org} · ${j.place}<br>${j.duration}</p><ul>${j.points.map(p=>`<li>${p}</li>`).join("")}</ul><div class="chips">${j.tags.map(t=>`<span>${t}</span>`).join("")}</div>`;if(focus)document.getElementById(`job-${i}`).focus()}
+timeline.addEventListener("click",e=>{const b=e.target.closest(".job");if(b)selectJob(Number(b.dataset.index))});
+timeline.addEventListener("keydown",e=>{const b=e.target.closest(".job");if(!b)return;let i=Number(b.dataset.index);if(e.key==="ArrowDown")i=(i+1)%jobs.length;else if(e.key==="ArrowUp")i=(i+jobs.length-1)%jobs.length;else if(e.key==="Home")i=0;else if(e.key==="End")i=jobs.length-1;else return;e.preventDefault();selectJob(i,true)});
+selectJob(0);
+document.getElementById("print-jobs").innerHTML=jobs.map(j=>`<article><h3>${j.title} · ${j.org}</h3><p>${j.place} · ${j.duration}</p><ul>${j.points.map(p=>`<li>${p}</li>`).join("")}</ul></article>`).join("");
+const skills=[
+["Engineering","Equipment qualification"],["Engineering","Process validation"],["Engineering","Aseptic manufacturing"],["Engineering","GMP / Annex 1"],["Engineering","DMAIC & 5M"],["Engineering","Risk assessment / FMECA"],
+["Digital","Power BI"],["Digital","Power Automate"],["Digital","MindManager"],["Digital","Autodesk"],["Digital","Microsoft Office"],["Digital","Python · coursework"],["Digital","MATLAB / Aspen · coursework"],
+["People","Communication"],["People","Organisation"],["People","Problem-solving"],["People","Initiative & creativity"],["People","Autonomy"],["People","Project management"],
+["Languages","Arabic · native"],["Languages","English · C2"],["Languages","French · C2"],["Languages","Italian · learning"],["Languages","Spanish · learning"]
+];
+function showSkills(f){document.getElementById("skill-grid").innerHTML=skills.filter(s=>f==="All"||s[0]===f).map(s=>`<div class="skill"><small>${s[0]}</small><b>${s[1]}</b></div>`).join("")}
+showSkills("All");
+document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.setAttribute("aria-pressed",x===b));showSkills(b.dataset.filter)}));
+const projects=[
+{category:"Entrepreneurship · Innoprod",title:"Rethinking medicine packaging",text:"At Innoprod in Albi, I developed and managed an entrepreneurship project exploring an eco-friendly, digitalised alternative for the secondary packaging of medicines. The project received first prize at the Ingé-Innov Salon in 2024.",tags:["Sustainability","Digitalisation","First prize · 2024"]},
+{category:"Process engineering · Novo Nordisk",title:"Building confidence in formulation",text:"My work on the Fill & Finish project covers qualification of formulation equipment and processes, validation planning for injectables, and sterile manufacturing compliance. Contributions span requirements, supplier selection, system design, commissioning and verification, technical documentation, and deviation management.",tags:["FAT / SAT / IV / OV","GMP Annex 1","Science & risk-based approach"]},
+{category:"Collaboration · Novo Nordisk",title:"Making knowledge flow",text:"I worked on improving communication flow between six Novo Nordisk sites through roadmaps and templates. I also created interactive technical training tools for new recruits, bringing structured process knowledge into more accessible learning experiences.",tags:["Six sites","Shared templates","Interactive training"]}
+];
+const dialog=document.getElementById("project-dialog");
+document.querySelectorAll("[data-project]").forEach(b=>b.addEventListener("click",()=>{const p=projects[Number(b.dataset.project)];document.getElementById("dialog-category").textContent=p.category;document.getElementById("dialog-title").textContent=p.title;document.getElementById("dialog-text").textContent=p.text;document.getElementById("dialog-tags").innerHTML=p.tags.map(t=>`<span>${t}</span>`).join("");dialog.showModal()}));
+dialog.querySelector(".close").addEventListener("click",()=>dialog.close());
+dialog.addEventListener("click",e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+document.getElementById("print").addEventListener("click",()=>window.print());
+let toastTimer;function toast(t){const el=document.querySelector(".toast");el.textContent=t;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.textContent="",4000)}
+document.getElementById("copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText("ZREK@novonordisk.com");toast("Email address copied")}catch{const field=document.createElement("textarea");field.value="ZREK@novonordisk.com";field.style.position="fixed";field.style.opacity="0";document.body.appendChild(field);field.select();const ok=document.execCommand("copy");field.remove();toast(ok?"Email address copied":"Email: ZREK@novonordisk.com")}});
+</script>
+</body>
+</html>
